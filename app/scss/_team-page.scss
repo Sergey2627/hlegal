@@ -1,0 +1,121 @@
+.team-page {
+            padding-top: 60px;
+
+            &__team-block {
+                max-width: 315px;
+                margin: 0 auto;
+                padding: 60px 0;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                @media screen and (min-width: $breakpoint-md) {
+                    max-width: 648px;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 60px;
+                    @media screen and (min-width: $breakpoint-lg) {
+                        max-width: 904px;
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+                    @media screen and (min-width: $breakpoint-xl) {
+                        max-width: 1320px;
+                    }
+                    @media screen and (min-width: $breakpoint-xxl) {
+                        max-width: 1600px;
+                    }
+                }
+            }
+    
+    &__img {
+        object-fit: cover;
+        width: 315px;
+        @media screen and (min-width: $breakpoint-md) {
+            width: 294px;
+            height: 400px;
+            @media screen and (min-width: $breakpoint-lg) {
+                width: 261px;
+            }
+            @media screen and (min-width: $breakpoint-xl) {
+                        width: 400px;
+            }
+            @media screen and (min-width: $breakpoint-xxl) {
+                        width: 493px;
+            }
+        }
+    }
+
+    &__name {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        gap: 5px;
+    }
+    
+    &__title {
+        padding-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        }
+
+        &__arrow {
+            transform: rotate(-90deg);
+            @media screen and (min-width: $breakpoint-md) {
+                transform: rotate(0);
+            }
+        }
+
+        &__menu-icon {
+            width: 32px;
+            height: 32px;
+            &:hover {
+                stroke: $accent-color;
+            }
+        }
+
+        &__title1 {
+            @include main-gradient-text($gradient-red-text);
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 700;
+                @media screen and (min-width: $breakpoint-md) {
+                    font-size: 38px;
+                }
+                }
+
+&__text {
+    @media screen and (min-width: $breakpoint-md) {
+
+        width: 648px;
+        }
+    
+        @media screen and (min-width: $breakpoint-lg) {
+            width: 664px;
+            margin: 0 auto;
+        }
+    
+        @media screen and (min-width: $breakpoint-xl) {
+            width: 1080px;
+            padding: 0;
+        }
+        @media screen and (min-width: $breakpoint-xxl) {
+            width: 1360px;
+        }
+    }
+
+&__img {
+    border-radius: $radius-sm;
+}
+
+        h4 {
+            font-size: 16;
+            font-weight: 700;
+            color: $main-color;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            color: $text-color;
+        }
+    }

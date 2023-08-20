@@ -1,0 +1,131 @@
+.partners {
+max-width: 1720px;
+margin: 0 auto;
+&__elements {
+   display: flex;
+   flex-direction: column;
+
+   @media screen and (min-width: $breakpoint-md) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media screen and (min-width: $breakpoint-lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+
+
+&__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+
+  #block1 {
+    background-color: #1C4280;
+    @media screen and (min-width: $breakpoint-md) {
+    }
+  }
+  
+  #block2 {
+    background-color: #143646;
+    @media screen and (min-width: $breakpoint-md) {
+    }
+
+  }
+  
+  #block3 {
+    background-color: #F48B30;
+    @media screen and (min-width: $breakpoint-md) {
+    }
+
+  }
+
+  #block4 {
+    background-color: #9E4DC3;
+    @media screen and (min-width: $breakpoint-md) {
+    }
+  }
+  
+  #block5 {
+    background-color: #FD9339;
+    @media screen and (min-width: $breakpoint-md) {
+    }
+  }
+  
+  #block6 {
+    background-color: #E2E2E4;
+    @media screen and (min-width: $breakpoint-md) {
+    }
+  }
+
+  #block7 {
+    background-color:  #C71C36;
+
+    display: none;
+    @media screen and (min-width: $breakpoint-md) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+  }
+  
+  #block8 {
+    background-color: #DCF3F9;
+    display: none;
+    @media screen and (min-width: $breakpoint-md) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+  }
+  
+  #block9 {
+    background-color: #EAEAEA;
+    display: none;
+    @media screen and (min-width: $breakpoint-md) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+  #block10 {
+    background-color: #282240;
+
+    display: none;
+    @media screen and (min-width: $breakpoint-md) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+  
+  #block11 {
+    background-color: #1D4568;
+    display: none;
+    @media screen and (min-width: $breakpoint-md) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+  }
+  
+  #block12 {
+    background-color: #000;
+    display: none;
+    @media screen and (min-width: $breakpoint-md) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+  }
+}
